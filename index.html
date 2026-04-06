@@ -2,255 +2,253 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Isotoxal Studios — Interactive Storytelling Through Games & Films</title>
-  <meta name="description"
-    content="Isotoxal Studios is an indie creative studio blending technology and storytelling to build games, films, and experimental experiences." />
-  <link rel="icon" type="image/svg+xml" href="assets/Logo.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isotoxal Studios</title>
+    <meta name="description"
+        content="Isotoxal Studios is an indie creative studio blending technology and storytelling to build games, films, and experimental experiences." />
+    <link rel="icon" type="image/svg+xml" href="assets/Logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- Decorative Background Elements -->
-  <div class="bg-decorations" aria-hidden="true">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-    <div class="shape shape-1 shape-bulb" title="Idea">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round">
-        <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5 5 0 0 0 8 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5">
-        </path>
-        <path d="M9 18h6"></path>
-        <path d="M10 22h4"></path>
-      </svg>
-      <div class="bulb-glow"></div>
-    </div>
-    <div class="shape shape-2" title="Gaming">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round">
-        <line x1="6" y1="12" x2="10" y2="12"></line>
-        <line x1="8" y1="10" x2="8" y2="14"></line>
-        <line x1="15" y1="13" x2="15.01" y2="13"></line>
-        <line x1="18" y1="11" x2="18.01" y2="11"></line>
-        <rect x="2" y="6" width="20" height="12" rx="2"></rect>
-      </svg>
-    </div>
-    <div class="shape shape-3" title="Action">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round">
-        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
-      </svg>
-    </div>
-    <div class="shape shape-4 shape-star" title="Star">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round">
-        <polygon
-          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-        </polygon>
-      </svg>
-    </div>
-    <div class="shape shape-5 shape-cloud" title="Cloud">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-        stroke-linejoin="round">
-        <path
-          d="M17.5 19c2.5 0 4.5-2 4.5-4.5S20 10 17.5 10c0-3-2.5-5.5-5.5-5.5S6.5 7 6.5 10c-2.5 0-4.5 2-4.5 4.5S4 19 6.5 19h11z">
-        </path>
-      </svg>
-    </div>
-  </div>
-
-  <!-- Animated grid background -->
-  <canvas id="grid-canvas" aria-hidden="true"></canvas>
-
-  <!-- Navigation -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo" aria-label="Isotoxal Studios Home">
-        <svg width="36" height="36" viewBox="0 0 135.46667 135.46618" xmlns="http://www.w3.org/2000/svg">
-          <path style="fill:#151515;fill-opacity:1;stroke:#c5d86d;stroke-width:7.96;stroke-opacity:1"
-            d="m 93.19,93.19 c -26.2,52.95 -24.04,49.14 -50.92,0 -52.95,-26.2 -49.14,-24.04 0,-50.92 26.2,-52.95 24.04,-49.14 50.92,0 52.95,26.2 49.14,24.04 0,50.92 z" />
-        </svg>
-        <span>Isotoxal</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#films">Films</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- === HERO === -->
-  <section id="hero">
-    <div class="hero-content">
-      <div class="hero-badge">Indie Studio</div>
-      <h1 class="hero-title">
-        <span class="hero-title-line">Isotoxal</span>
-        <span class="hero-title-line accent">Studios</span>
-      </h1>
-      <p class="hero-subtitle">Visualizing stories as videos and games</p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">Explore</a>
-      </div>
-    </div>
-    <div class="hero-scroll-hint" aria-hidden="true">
-      <span></span>
-    </div>
-  </section>
-
-  <!-- === PROJECTS === -->
-  <section id="projects">
-    <div class="section-inner">
-      <div class="section-header">
-        <span class="section-tag">What We Build</span>
-        <h2>Projects</h2>
-      </div>
-      <div class="projects-grid">
-
-        <!-- Charaides -->
-        <div class="project-card" id="card-charaides">
-          <div class="card-status">Coming Soon</div>
-          <div class="card-icon">
-            <img src="assets/Charaides.svg" alt="Charaides" />
-          </div>
-          <h3>Charaides</h3>
-          <p>AI-powered party game where chaos meets creativity</p>
-          <div class="card-tags">
-            <span>Multiplayer</span>
-            <span>AI</span>
-            <span>Social</span>
-          </div>
+    <!-- Decorative Background Elements -->
+    <div class="bg-decorations" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="shape shape-1 shape-bulb" title="Idea">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                    d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5 5 0 0 0 8 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5">
+                </path>
+                <path d="M9 18h6"></path>
+                <path d="M10 22h4"></path>
+            </svg>
+            <div class="bulb-glow"></div>
         </div>
-
-        <!-- Mollywoodle -->
-        <div class="project-card featured" id="card-mollywoodle">
-          <div class="card-status live">Live</div>
-          <div class="card-icon">
-            <img src="assets/Mollywoodle.png" alt="Mollywoodle" />
-          </div>
-          <h3>Mollywoodle</h3>
-          <p>Daily Malayalam movie guessing game</p>
-          <a href="https://mollywoodle.com" target="_blank" rel="noopener" class="btn btn-small">Play Now
-            →</a>
+        <div class="shape shape-2" title="Gaming">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="6" y1="12" x2="10" y2="12"></line>
+                <line x1="8" y1="10" x2="8" y2="14"></line>
+                <line x1="15" y1="13" x2="15.01" y2="13"></line>
+                <line x1="18" y1="11" x2="18.01" y2="11"></line>
+                <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+            </svg>
         </div>
-
-        <!-- Isogrid -->
-        <div class="project-card" id="card-isogrid">
-          <div class="card-status foss">FOSS</div>
-          <div class="card-icon">
-            <img src="assets/Isogrid.svg" alt="Isogrid" />
-          </div>
-          <h3>Isogrid</h3>
-          <p>Open-source grid tool for creators</p>
-          <div class="card-tags">
-            <span>Open Source</span>
-          </div>
+        <div class="shape shape-3" title="Action">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
         </div>
-
-      </div>
+        <div class="shape shape-4 shape-star" title="Star">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+            </svg>
+        </div>
+        <div class="shape shape-5 shape-cloud" title="Cloud">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                    d="M17.5 19c2.5 0 4.5-2 4.5-4.5S20 10 17.5 10c0-3-2.5-5.5-5.5-5.5S6.5 7 6.5 10c-2.5 0-4.5 2-4.5 4.5S4 19 6.5 19h11z">
+                </path>
+            </svg>
+        </div>
     </div>
-  </section>
 
-  <!-- === FILMS === -->
-  <section id="films">
-    <div class="section-inner">
-      <div class="section-header">
-        <span class="section-tag">On Screen</span>
-        <h2>Films</h2>
-      </div>
-      <div class="films-grid">
+    <!-- Animated grid background -->
+    <canvas id="grid-canvas" aria-hidden="true"></canvas>
 
-        <!-- Mithya -->
-        <a href="https://www.youtube.com/watch?v=zxaKUpdJW-0" target="_blank" rel="noopener" class="film-card"
-          id="card-mithya">
-          <div class="film-poster"
-            style="background-image: url('https://img.youtube.com/vi/zxaKUpdJW-0/maxresdefault.jpg'); background-size: cover; background-position: center;">
-            <div class="film-overlay"></div>
-            <div class="film-info">
-              <h3>Mithya</h3>
-              <p>A story that blurs the line between reality and illusion</p>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo" aria-label="Isotoxal Studios Home">
+                <svg width="36" height="36" viewBox="0 0 135.46667 135.46618" xmlns="http://www.w3.org/2000/svg">
+                    <path style="fill:#151515;fill-opacity:1;stroke:#c5d86d;stroke-width:7.96;stroke-opacity:1"
+                        d="m 93.19,93.19 c -26.2,52.95 -24.04,49.14 -50.92,0 -52.95,-26.2 -49.14,-24.04 0,-50.92 26.2,-52.95 24.04,-49.14 50.92,0 52.95,26.2 49.14,24.04 0,50.92 z" />
+                </svg>
+                <span>Isotoxal</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#films">Films</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- === HERO === -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Indie Studio</div>
+            <h1 class="hero-title">
+                <span class="hero-title-line">Isotoxal</span>
+                <span class="hero-title-line accent">Studios</span>
+            </h1>
+            <p class="hero-subtitle">Visualizing stories as videos and games</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">Explore</a>
             </div>
-          </div>
-        </a>
-
-        <!-- Upcoming Film -->
-        <div class="film-card upcoming" id="card-upcoming">
-          <div class="film-poster">
-            <div class="film-overlay"></div>
-            <div class="film-info">
-              <span class="film-badge">Coming July</span>
-              <h3>Upcoming Film</h3>
-              <p>Stay tuned for something extraordinary</p>
-            </div>
-          </div>
         </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+            <span></span>
+        </div>
+    </section>
 
-      </div>
-    </div>
-  </section>
+    <!-- === PROJECTS === -->
+    <section id="projects">
+        <div class="section-inner">
+            <div class="section-header">
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-grid">
 
-  <!-- === ABOUT === -->
-  <section id="about">
-    <div class="section-inner about-inner">
-      <div class="section-header">
-        <span class="section-tag">Who We Are</span>
-        <h2>About</h2>
-      </div>
-      <p class="about-text">
-        Isotoxal Studios is an indie creative studio blending technology and storytelling
-        to build games, films, and experimental experiences.
-      </p>
-      <div class="about-logo" aria-hidden="true">
-        <svg width="120" height="120" viewBox="0 0 135.46667 135.46618" xmlns="http://www.w3.org/2000/svg">
-          <path style="fill:#151515;fill-opacity:1;stroke:#c5d86d;stroke-width:7.96;stroke-opacity:1"
-            d="m 93.19,93.19 c -26.2,52.95 -24.04,49.14 -50.92,0 -52.95,-26.2 -49.14,-24.04 0,-50.92 26.2,-52.95 24.04,-49.14 50.92,0 52.95,26.2 49.14,24.04 0,50.92 z" />
-        </svg>
-      </div>
-    </div>
-  </section>
+                <!-- Charaides -->
+                <div class="project-card" id="card-charaides">
+                    <div class="card-status">Coming Soon</div>
+                    <div class="card-icon">
+                        <img src="assets/Charaides.svg" alt="Charaides" />
+                    </div>
+                    <h3>Charaides</h3>
+                    <p>AI-powered party game where chaos meets creativity</p>
+                    <div class="card-tags">
+                        <span>Multiplayer</span>
+                        <span>AI</span>
+                        <span>Social</span>
+                    </div>
+                </div>
 
-  <!-- === FOOTER === -->
-  <footer id="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <svg width="24" height="24" viewBox="0 0 135.46667 135.46618" xmlns="http://www.w3.org/2000/svg">
-          <path style="fill:#151515;fill-opacity:1;stroke:#c5d86d;stroke-width:7.96;stroke-opacity:1"
-            d="m 93.19,93.19 c -26.2,52.95 -24.04,49.14 -50.92,0 -52.95,-26.2 -49.14,-24.04 0,-50.92 26.2,-52.95 24.04,-49.14 50.92,0 52.95,26.2 49.14,24.04 0,50.92 z" />
-        </svg>
-        <span>© Isotoxal Studios</span>
-      </div>
-      <div class="footer-socials">
-        <a href="https://www.youtube.com/watch?v=zxaKUpdJW-0" target="_blank" rel="noopener" aria-label="YouTube"
-          class="social-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path
-              d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" />
-            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
-          </svg>
-        </a>
-        <a href="https://www.instagram.com/isotoxal_/" target="_blank" rel="noopener" aria-label="Instagram"
-          class="social-link">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
+                <!-- Mollywoodle -->
+                <div class="project-card featured" id="card-mollywoodle">
+                    <div class="card-status live">Live</div>
+                    <div class="card-icon">
+                        <img src="assets/Mollywoodle.png" alt="Mollywoodle" />
+                    </div>
+                    <h3>Mollywoodle</h3>
+                    <p>Daily Malayalam movie guessing game</p>
+                    <a href="https://mollywoodle.com" target="_blank" rel="noopener" class="btn btn-small">Play Now
+                        →</a>
+                </div>
 
-  <script src="script.js"></script>
+                <!-- Isogrid -->
+                <div class="project-card" id="card-isogrid">
+                    <div class="card-status foss">FOSS</div>
+                    <div class="card-icon">
+                        <img src="assets/Isogrid.svg" alt="Isogrid" />
+                    </div>
+                    <h3>Isogrid</h3>
+                    <p>Open-source grid tool for creators</p>
+                    <div class="card-tags">
+                        <span>Open Source</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- === FILMS === -->
+    <section id="films">
+        <div class="section-inner">
+            <div class="section-header">
+                <h2>Films</h2>
+            </div>
+            <div class="films-grid">
+
+                <!-- Mithya -->
+                <a href="https://www.youtube.com/watch?v=zxaKUpdJW-0" target="_blank" rel="noopener" class="film-card"
+                    id="card-mithya">
+                    <div class="film-poster"
+                        style="background-image: url('https://img.youtube.com/vi/zxaKUpdJW-0/maxresdefault.jpg'); background-size: cover; background-position: center;">
+                        <div class="film-overlay"></div>
+                        <div class="film-info">
+                            <h3>Mithya</h3>
+                            <p>A story that blurs the line between reality and illusion</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Upcoming Film -->
+                <div class="film-card upcoming" id="card-upcoming">
+                    <div class="film-poster">
+                        <div class="film-overlay"></div>
+                        <div class="film-info">
+                            <span class="film-badge">Coming July</span>
+                            <h3>Upcoming Film</h3>
+                            <p>Stay tuned for something extraordinary</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- === ABOUT === -->
+    <section id="about">
+        <div class="section-inner about-inner">
+            <div class="section-header">
+                <h2>Who We Are</h2>
+            </div>
+            <p class="about-text">
+                Isotoxal Studios is an indie creative studio blending technology and storytelling
+                to build games, films, and experimental experiences.
+            </p>
+            <div class="about-logo" aria-hidden="true">
+                <svg width="120" height="120" viewBox="0 0 135.46667 135.46618" xmlns="http://www.w3.org/2000/svg">
+                    <path style="fill:#151515;fill-opacity:1;stroke:#c5d86d;stroke-width:7.96;stroke-opacity:1"
+                        d="m 93.19,93.19 c -26.2,52.95 -24.04,49.14 -50.92,0 -52.95,-26.2 -49.14,-24.04 0,-50.92 26.2,-52.95 24.04,-49.14 50.92,0 52.95,26.2 49.14,24.04 0,50.92 z" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- === FOOTER === -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <svg width="24" height="24" viewBox="0 0 135.46667 135.46618" xmlns="http://www.w3.org/2000/svg">
+                    <path style="fill:#151515;fill-opacity:1;stroke:#c5d86d;stroke-width:7.96;stroke-opacity:1"
+                        d="m 93.19,93.19 c -26.2,52.95 -24.04,49.14 -50.92,0 -52.95,-26.2 -49.14,-24.04 0,-50.92 26.2,-52.95 24.04,-49.14 50.92,0 52.95,26.2 49.14,24.04 0,50.92 z" />
+                </svg>
+                <span>© Isotoxal Studios</span>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.youtube.com/watch?v=zxaKUpdJW-0" target="_blank" rel="noopener"
+                    aria-label="YouTube" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z" />
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/isotoxal_/" target="_blank" rel="noopener" aria-label="Instagram"
+                    class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

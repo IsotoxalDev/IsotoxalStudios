@@ -252,11 +252,19 @@ img {
   right: 0;
   z-index: 100;
   padding: 0 2rem;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  background: rgba(26, 26, 26, 0.7);
-  border-bottom: 1px solid var(--border);
-  transition: background var(--transition);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: all var(--transition);
+}
+
+#navbar.scrolled {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: var(--bg-surface);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: var(--nm-out-sm);
 }
 
 .nav-inner {
@@ -406,6 +414,7 @@ section {
 
 .section-header h2 {
   font-family: var(--font-main);
+  color: #c5d86d;
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.03em;
